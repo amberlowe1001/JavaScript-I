@@ -24,7 +24,7 @@ const internTwo = {
     name: "Kennan",
     email: "kdiben1@tinypic.com",
     gender: "M"
-}
+};
 const internThree = {
     id: 2,
     name: "Keven",
@@ -50,35 +50,35 @@ const internFive = {
 // ==== Challenge 2: Reading Object Data ====
 // Once your objects are created, log out the following requests from HR into the console:
 
-console.log(mitzi.name);// Mitzi's name
+console.log(internOne.name);// Mitzi's name
 // Console.log(intern[1]);
-console.log(Kennan.id);// Kennan's ID
+console.log(internTwo.id);// Kennan's ID
 // Console.log(intern[2],id);
-console.log(Keven.email); // Keven's email
+console.log(internThree.email); // Keven's email
 // console.log(intern[3].name);
-console.log(Gannie.name); // Gannie's name
+console.log(internFour.name); // Gannie's name
 // console.log(intern[3]);
 // Antonietta's Gender
-console.log(Antonietta.gender);
+console.log(internFive.gender);
 //console.log (intern[4].gender);
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 
-Kennan.speak = function () {
+internTwo.speak = function () {
     return `Hello, my name is ${this.name}`
 };
-console.log(Kennan.speak());
+console.log(internTwo.speak());
 // → Hello , my name is Kennan!
 
 // console.log(kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-antonietta.multiplyNums = function (num1, num2) {
+internFive.multiplyNums = function (num1, num2) {
     return num1 * num2
 };
 
 
-console.log(antonietta.multiplyNums(3, 4));
+console.log(internFive.multiplyNums(3, 4));
 // → 12
 
 //console.log(antonietta.multiplyNums(3,4));
@@ -95,14 +95,18 @@ console.log(antonietta.multiplyNums(3, 4));
 const parent = {
     name: `Susan`,
     age: 70,
-    child: {
-        name: ` George`,
-        age: 50,
-    grandchild: {
+}
+const child = {
+    name: ` George`,
+    age: 50,
+};
+
+    const   grandchild ={
+
             name: `Sam`,
             age: 30,
         }
-    }
+
 };
 parent.speak = function () {
     return `Hello, my name is  ${this.name }`

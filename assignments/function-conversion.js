@@ -36,5 +36,5 @@ console.log(subtract(1, 2));
 //   return num * 3;
 // });
 // console.log(triple);
-let triple = exampleArray.map((num) => num * 3)
+let triple = trippleArray.map((num) => num * 3)
 console.log(triple);
